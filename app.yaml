@@ -14,7 +14,7 @@ handlers:
 
 # Serve php scripts.
 - url: /(.+\.(php|css|js))$
-  script: \1
+  script: \10
   
 - url: /css
   static_dir: css
