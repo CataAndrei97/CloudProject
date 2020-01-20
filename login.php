@@ -75,7 +75,7 @@
 					
 					$_SESSION["name"] = $name;
 					
-					header("Location:home.php",TRUE,302);
+					header("Location:home.php",true,301);
 					header("Location:home.php");
 				}
 
