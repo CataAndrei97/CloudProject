@@ -74,9 +74,9 @@
 					echo "Pass the loggin";
 					
 					$_SESSION["name"] = $name;
-					header("location=home.php");
+					header("location=https://mywebpageproject-265710.appspot.com/home.php");
 					
-					header("refresh:2;url=home.php");
+					header("Location=https://mywebpageproject-265710.appspot.com/home.php");
 				}
 
 				log_file("You are now disconnected from database!");
