@@ -71,21 +71,24 @@
 
 			if($contor == 3) {	
 				$sql = "INSERT INTO mygametable (Name, Password, Email) VALUES ('$name', '$pass', '$email')";
-
+				echo "insert";
 				if ($conn->query($sql)) {
 					log_file("New record created successfully");
+					echo "New record created successfully";
 				} else {
+					echo "same user";
 					if(preg_match("/Duplicate entry/",$conn->error)) {
 						$userExists = "This username already exists!";
 						$err_cont++;
 						log_file($userExists);
+						echo $userExists;
 					} else {
 						$err_cont++;
 						log_file("Error: " . $conn->error);
 						echo "Err";
 					}
 				}
-
+				echo $err_cont;
 				if(!$err_cont) {
 					log_file("Pass the register");
 					
