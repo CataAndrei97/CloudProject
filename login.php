@@ -71,6 +71,7 @@
 				
 				if(!$err_cont) {
 					log_file("Pass the loggin");
+					echo "Pass the loggin";
 					
 					$_SESSION["name"] = $name;
 					
