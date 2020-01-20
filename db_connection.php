@@ -13,5 +13,6 @@
 		die("Connection failed: " . $conn->connect_error);
 	} else {
 		log_file("You are now connected to database!");
+		echo "You are now connected to database!";
 	}
 ?>
