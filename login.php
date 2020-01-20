@@ -74,6 +74,7 @@
 					echo "Pass the loggin";
 					
 					$_SESSION["name"] = $name;
+					header("location=home.php");
 					
 					header("refresh:2;url=home.php");
 				}
