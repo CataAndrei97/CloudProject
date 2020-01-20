@@ -5,7 +5,7 @@
 	$dbpass = "";
 	$db = "twdatabase";
 
-	$conn = new mysqli('35.202.125.179', 'root', 'user1234', 'mywebappdb');
+	$conn = new mysqli('mywebpageproject-265710:us-central1:mywebappdb', 'root', 'user1234', 'mywebappdb', 3306);
 
 	if ($conn->connect_errno) {
 		log_file("Connection failed: " . $conn->connect_error);
