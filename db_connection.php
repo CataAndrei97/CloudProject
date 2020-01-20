@@ -5,7 +5,7 @@
 	$dbpass = "";
 	$db = "twdatabase";
 
-	$conn = new mysqli('mywebappdb.cs9uu9xa2wuc.ap-northeast-1.rds.amazonaws.com', 'user', 'user1234', 'mywebappdb', '3306');
+	$conn = new mysqli('mywebpageproject-265710:us-central1:mywebappdb', 'root', 'user1234', 'mywebappdb');
 
 	if ($conn->connect_errno) {
 		log_file("Connection failed: " . $conn->connect_error);
