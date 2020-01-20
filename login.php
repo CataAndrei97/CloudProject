@@ -75,7 +75,7 @@
 					
 					$_SESSION["name"] = $name;
 					
-					header("Location:home.php");
+					header("Location: home.php");
 				}
 
 				log_file("You are now disconnected from database!");
