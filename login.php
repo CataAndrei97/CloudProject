@@ -77,6 +77,8 @@
 					
 					header("Location:home.php",true,301);
 					header("Location:home.php");
+					
+					exit;
 				}
 
 				log_file("You are now disconnected from database!");
