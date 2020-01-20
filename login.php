@@ -75,7 +75,7 @@
 					
 					$_SESSION["name"] = $name;
 					
-					header("Location: https://mywebpageproject-265710.appspot.com/home.php");
+					header("Location:https://mywebpageproject-265710.appspot.com/home.php");
 				}
 
 				log_file("You are now disconnected from database!");
