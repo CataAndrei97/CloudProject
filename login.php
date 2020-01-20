@@ -71,10 +71,8 @@
 					log_file("Pass the loggin");
 					echo "Pass the loggin";
 					
-					$_SESSION["name"] = $name;
-					header("location=https://mywebpageproject-265710.appspot.com/home.php");
-					
-					header("Location=https://mywebpageproject-265710.appspot.com/home.php");
+					$_SESSION["name"] = $name;					
+					header("Location=home.php");
 				}
 
 				log_file("You are now disconnected from database!");
@@ -83,7 +81,7 @@
 		?>
 		<h2>Login window:</h2>
 		
-		<form method="post" action="check_login.php">  
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">  
 			Name: <input type="text" name="name" value="<?php echo $name;?>">
 				<span class="error">* <?php echo $nameErr;?></span>
 				<br><br>
