@@ -5,7 +5,8 @@
 	$dbpass = "";
 	$db = "twdatabase";
 
-	$conn = new mysqli('mywebpageproject-265710:us-central1:mywebappdb', 'root', 'user1234', 'mywebappdb', 3306);
+	$dbSocket = '/cloudsql/mywebpageproject-265710:us-central1:mywebappdb';
+	$mysqli = new mysqli(null, 'root', 'user1234', 'mywebappdb', null, $dbSocket);
 
 	if ($conn->connect_errno) {
 		log_file("Connection failed: " . $conn->connect_error);
