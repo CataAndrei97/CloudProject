@@ -1,11 +1,7 @@
 <?php
 	include('log_fct.php');
-	$dbhost = "10.10.69.221";
-	$dbuser = "root";
-	$dbpass = "";
-	$db = "twdatabase";
 
-	$dbSocket = '/cloudsql/mywebpageproject-265710:us-central1:mywebappdb';
+	$dbSocket = '/cloudsql/rugged-truck-265912:us-central1:root';
 	$conn = new mysqli(null, 'root', 'user1234', 'mywebappdb', null, $dbSocket);
 
 	if ($conn->connect_errno) {
